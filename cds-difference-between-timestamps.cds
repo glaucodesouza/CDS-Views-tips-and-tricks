@@ -22,8 +22,18 @@ define view entity zteste_calc_diff
   erzetFim,
   timeStampFim,
   diffTime,
+
+// we do not need this field. 
+// It is only for demonstration pourposes.
+// ( floor(1.63) ) = 1
   ( floor(diffTime) )                                                                         as diffInt, //int part of diff time
+
+// we do not need this field.
+// It is only for demonstration pourposes.
+// ( 1.63 - floor(1.63)) = 0.63
   ( diffTime - floor(diffTime))                                                               as diffDec, //dec part of diff time
+
+//calculation itself.
   cast( ( floor(diffTime) ) + ( ( diffTime - floor(diffTime)) * 60 / 100 ) as abap.dec(6,2) ) as diffCorreta
 }
 
