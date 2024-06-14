@@ -29,7 +29,7 @@ define view entity ztest_calc_diff
 
 // --------------------------------------------------
 // SECOND CDS (needed)
-// timeStampIni = start timestamp
+// timeStampIni = starting timestamp
 // timeStampFim = ending timestamp
 // --------------------------------------------------
 @AbapCatalog.viewEnhancementCategory: [#NONE]
